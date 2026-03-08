@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual Regression Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; color: #222; }
+    h1 { margin-bottom: 8px; }
+    .meta { margin-bottom: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 12px; }
+    img { width: 100%; border-radius: 6px; border: 1px solid #eee; }
+  </style>
+</head>
+<body>
+  <h1>Visual Regression Report</h1>
+  <div class="meta">
+    <p><strong>URL Tested:</strong> https://example.com</p>
+    <p><strong>Mismatch Percentage:</strong> 0.00%</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h2>Baseline</h2>
+      <img src="../baseline/homepage.png" alt="Baseline screenshot" />
+    </div>
+    <div class="card">
+      <h2>New Screenshot</h2>
+      <img src="../current/homepage.png" alt="New screenshot" />
+    </div>
+    <div class="card">
+      <h2>Diff Image</h2>
+      <img src="../diff/homepage_diff.png" alt="Diff image" />
+    </div>
+  </div>
+</body>
+</html>
