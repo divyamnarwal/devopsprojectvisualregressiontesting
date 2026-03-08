@@ -1,0 +1,20 @@
+# Kubernetes Deployment for Visual Regression Testing service.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: visual-regression-testing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: visual-regression-testing
+  template:
+    metadata:
+      labels:
+        app: visual-regression-testing
+    spec:
+      containers:
+      - name: app
+        image: visual-regression-testing:latest
+        ports:
+        - containerPort: 8000

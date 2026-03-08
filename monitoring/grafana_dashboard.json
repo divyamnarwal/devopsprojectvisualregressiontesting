@@ -1,0 +1,9 @@
+{
+  "__comment": "Placeholder Grafana dashboard definition for visual regression monitoring.",
+  "title": "Visual Regression Testing Dashboard",
+  "uid": "vrt-dashboard",
+  "timezone": "browser",
+  "panels": [],
+  "schemaVersion": 39,
+  "version": 1
+}

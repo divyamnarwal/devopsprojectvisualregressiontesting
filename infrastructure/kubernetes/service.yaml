@@ -1,0 +1,13 @@
+# Kubernetes Service exposing the visual regression API internally.
+apiVersion: v1
+kind: Service
+metadata:
+  name: visual-regression-testing-service
+spec:
+  selector:
+    app: visual-regression-testing
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8000
+  type: ClusterIP

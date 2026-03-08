@@ -1,0 +1,11 @@
+# Central runtime configuration for visual regression execution.
+project:
+  name: "Visual Regression Testing System"
+  environment: "development"
+
+# Filesystem locations for screenshots and generated outputs.
+paths:
+  baseline_dir: "tests/visual_tests/baseline"
+  current_dir: "tests/visual_tests/current"
+  diff_dir: "tests/visual_tests/diff"
+  report_dir: "deliverables"

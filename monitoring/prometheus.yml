@@ -1,0 +1,8 @@
+# Prometheus scrape configuration for API service metrics.
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: "visual-regression-api"
+    static_configs:
+      - targets: ["localhost:8000"]
