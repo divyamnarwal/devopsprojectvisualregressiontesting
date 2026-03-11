@@ -60,3 +60,17 @@ devopsprojectvisualregressiontesting/
 ## CI/CD Readiness
 
 The repository is organized with dedicated directories for pipeline definitions, infrastructure-as-code, monitoring, automated tests, and documentation to support iterative DevOps delivery.
+
+## Running with Docker
+
+Build the Docker image:
+
+```bash
+docker build -t visual-regression-system .
+```
+
+Run the container:
+
+```bash
+docker run -p 8000:8000 visual-regression-system
+```
